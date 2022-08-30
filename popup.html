@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/4c5c3913fd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wildfire Alert</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        function hide() {
+            document.getElementById('popup').style.display = 'none';
+        }
+        function show() {
+            document.getElementById('popup').style.display = 'block';
+        }
+    </script>
+
+
+</head>
+<body>
+    <div class="container">
+        <button type="submit" onClick="show()">Hey</button>
+        <div class="popup" id="popup"> 
+            <div class="row" style="float:right" > 
+                <div class="menu">
+                    <button>
+                        <i class="fa-solid fa-window-minimize"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </button>
+                    <button onClick="hide()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+  
+                </div>
+            </div>
+            <div class="alert-message">
+                <h2>Wildfire Alert</h2> 
+                <p>A LARGE wildfire has been detected at map reference 49861537 with a HIGH level of confidence. The pproposed system action is to DEPLOY autonomous firefighting resources.</p>
+            </div>
+            
+            <img class="table" src="assets/table.png">
+            
+            <div class="row">
+                <div class="column">
+                <img class="stats" src="assets/Test9.png">
+                </div>
+
+                
+                <div class="column response">
+                    <p style="margin-top: 10px">Time to automated response<br> 05:00</p>
+                
+                <div class="row">               
+                        <buton class="btn" style: padding=" 5px 5px" align-self= "center">Authorise</buton>
+                        <button class="btn red"  >Override Response</button>             
+                </div>
+            </div>
+        </div> <!-- end of popup -->
+        
+        
+        </div>
+    
+    
+    </div>
+</body>
+</html>
